@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impact Analysis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Impact Analysis</h1>
+        <form id="impact-analysis-form">
+            <div class="form-group">
+                <label for="regulation-type" style="font-weight: bolder;">Type of Regulation</label>
+                <select id="regulation-type">
+                    <option value="SEPA">SEPA</option>
+                    <option value="SEPA">Swift</option>
+                    <option value="SEPA">DORA</option>
+                    <!-- Add more options here if needed -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="version" style="font-weight: bolder;">Versions to Compare</label>
+                <select id="version">
+                    <option value="Version1">Select Version 1 to compare</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
+                    <!-- Add more options here if needed -->
+                </select>
+                <div class="form-group">
+                    <label for="file1">Upload File 1</label>
+                    <input type="file" id="file1">
+                </div>
+                <select id="version">
+                    <option value="Version2">Select Version 2 to compare</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
+                    <!-- Add more options here if needed -->
+                </select>
+                <div class="form-group">
+                    <label for="file2">Upload File 2</label>
+                    <input type="file" id="file2">
+                </div>
+            </div>
+            
+            
+            <button type="button" onclick="generateImpactAnalysis()">Generate Impact Analysis</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+ 
